@@ -932,6 +932,13 @@
 
     .p-link:hover { gap: 13px; border-color: var(--accent); }
 
+    .p-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: auto;
+    }
+
     /* Placeholder */
     .placeholder-inner {
       display: flex;
@@ -1523,46 +1530,34 @@
 
       <div class="projects-grid reveal d1">
 
-        <!-- Card 01 -->
+        <!-- Card 01: Military -->
         <article class="p-card">
           <span class="p-idx">01 / 03</span>
-          <h3 class="p-title">Chronic Disease &amp; Behavioral Analysis</h3>
+          <h3 class="p-title">US Military Base Slot Revenue Dashboard</h3>
           <p class="p-desc">
-            Identified diabetes prevalence exceeding <strong>25% among low-income populations</strong> in Southern states by segmenting <strong>500K+ records</strong> using SQL and BigQuery. Visualized state-level health disparities through an interactive Tableau dashboard to support public health decision-making.
+            Unlocked <strong>$400M+ in military slot revenue data</strong> for a MuckRock nonprofit client by automating Python PDF extraction of <strong>10K+ geo-enriched records</strong>, cutting processing time from days to under 1 minute. Deployed a cloud self-service dashboard with SQL querying and YoY analysis, empowering non-technical journalists to drive investigative reporting across <strong>4 Agile sprints</strong>.
           </p>
           <div class="p-tags" aria-label="Technologies">
-            <span class="p-tag">SQL</span>
-            <span class="p-tag">BigQuery</span>
-            <span class="p-tag">Tableau</span>
-            <span class="p-tag">GCP</span>
-            <span class="p-tag">Statistical Analysis</span>
-          </div>
-          <a href="https://github.com/pinhaopan" class="p-link" target="_blank" rel="noopener noreferrer" aria-label="View project on GitHub">
-            View on GitHub <span aria-hidden="true">&#8594;</span>
-          </a>
-        </article>
-
-        <!-- Card 02 -->
-        <article class="p-card">
-          <span class="p-idx">02 / 03</span>
-          <h3 class="p-title">Military Base Slot Revenue Dataset</h3>
-          <p class="p-desc">
-            Curated and deployed a <strong>publicly accessible</strong> dataset of slot machine revenue data across U.S. military bases. Hosted on GCP via Datasette, enabling open-access SQL querying with no infrastructure overhead. Built for researchers and journalists.
-          </p>
-          <div class="p-tags" aria-label="Technologies">
+            <span class="p-tag">Python</span>
             <span class="p-tag">Datasette</span>
             <span class="p-tag">GCP</span>
-            <span class="p-tag">Cloud Hosting</span>
+            <span class="p-tag">SQL</span>
+            <span class="p-tag">Agile</span>
             <span class="p-tag">Open Data</span>
           </div>
-          <a href="https://github.com/pinhaopan" class="p-link" target="_blank" rel="noopener noreferrer" aria-label="View project on GitHub">
-            View on GitHub <span aria-hidden="true">&#8594;</span>
-          </a>
+          <div class="p-links">
+            <a href="https://github.com/pinhaopan/muckrock-liberation/tree/main/fa25-team-b" class="p-link" target="_blank" rel="noopener noreferrer" aria-label="View project on GitHub">
+              GitHub <span aria-hidden="true">&#8594;</span>
+            </a>
+            <a href="https://ds-701-muckrock-data-liberation-project.onrender.com/" class="p-link" target="_blank" rel="noopener noreferrer" aria-label="View live dashboard">
+              Live Dashboard <span aria-hidden="true">&#8594;</span>
+            </a>
+          </div>
         </article>
 
-        <!-- Card 03 -->
+        <!-- Card 02: Sports -->
         <article class="p-card">
-          <span class="p-idx">03 / 03</span>
+          <span class="p-idx">02 / 03</span>
           <h3 class="p-title">Sports Performance Analytics Dashboard</h3>
           <p class="p-desc">
             Accelerated data prep by <strong>60%</strong> via process mapping and JIRA, modeling NCAA game data into star-schema tables within a cloud warehouse for SQL-based ranking volatility analysis. Democratized access for non-technical users through a <strong>5-section Streamlit dashboard</strong> with LLM-powered text-to-SQL, enabling natural language queries in under 60 seconds.
@@ -1575,9 +1570,35 @@
             <span class="p-tag">LLM</span>
             <span class="p-tag">JIRA</span>
           </div>
-          <a href="https://github.com/pinhaopan" class="p-link" target="_blank" rel="noopener noreferrer" aria-label="View project on GitHub">
-            View on GitHub <span aria-hidden="true">&#8594;</span>
-          </a>
+          <div class="p-links">
+            <a href="https://github.com/pinhaopan" class="p-link" target="_blank" rel="noopener noreferrer" aria-label="View project on GitHub">
+              GitHub <span aria-hidden="true">&#8594;</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 03: Chronic Disease -->
+        <article class="p-card">
+          <span class="p-idx">03 / 03</span>
+          <h3 class="p-title">Chronic Disease &amp; Behavioral Analysis</h3>
+          <p class="p-desc">
+            Identified diabetes prevalence exceeding <strong>25% among low-income populations</strong> in Southern states by segmenting <strong>500K+ records</strong> using SQL and BigQuery. Visualized state-level health disparities through an interactive Tableau dashboard to support public health decision-making.
+          </p>
+          <div class="p-tags" aria-label="Technologies">
+            <span class="p-tag">SQL</span>
+            <span class="p-tag">BigQuery</span>
+            <span class="p-tag">Tableau</span>
+            <span class="p-tag">GCP</span>
+            <span class="p-tag">Statistical Analysis</span>
+          </div>
+          <div class="p-links">
+            <a href="https://github.com/pinhaopan/Analyzing-Chronic-Diseases-and-Behavioral-Data-with-a-Focus-on-Diabetes" class="p-link" target="_blank" rel="noopener noreferrer" aria-label="View project on GitHub">
+              GitHub <span aria-hidden="true">&#8594;</span>
+            </a>
+            <a href="https://public.tableau.com/app/profile/pin.hao.pan/viz/AnalyzingDiabetesintheUS_17504529854490/Dashboard" class="p-link" target="_blank" rel="noopener noreferrer" aria-label="View Tableau dashboard">
+              Tableau Dashboard <span aria-hidden="true">&#8594;</span>
+            </a>
+          </div>
         </article>
 
       </div>
